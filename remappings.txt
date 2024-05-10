@@ -1,0 +1,4 @@
+ERC721A/=lib/ERC721A/contracts/
+ds-test/=lib/foundry-devops/lib/forge-std/lib/ds-test/src/
+forge-std/=lib/forge-std/src/
+foundry-devops/=lib/foundry-devops/
