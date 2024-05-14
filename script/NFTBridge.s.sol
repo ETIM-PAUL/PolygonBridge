@@ -10,6 +10,5 @@ contract NFTBridgeScript is Script {
         vm.startBroadcast(deployerPrivateKey);
         NFTBridge nftBridge = new NFTBridge();
         vm.stopBroadcast();
-        vm.broadcast();
     }
 }

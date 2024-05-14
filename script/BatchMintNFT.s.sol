@@ -6,9 +6,6 @@ import {DevOpsTools} from "foundry-devops/src/DevOpsTools.sol";
 import {NFTBridge} from "../src/NFTBridge.sol";
 
 contract MintBatchNFT is Script {
-    string public constant PUG =
-        "ipfs://bafybeig37ioir76s7mg5oobetncojcm3c3hxasyd4rvid4jqhy4gkaheg4/?filename=0-PUG.json";
-
     function run() external {
         address mostRecentlyDeployed = DevOpsTools.get_most_recent_deployment(
             "NFTBridge",
@@ -20,7 +17,7 @@ contract MintBatchNFT is Script {
     function mintNftOnContract(address contractAddress) public {
         vm.startBroadcast();
         NFTBridge(contractAddress).mintNFT(
-            0xBeEf7C8c2f3D365fC6D38f0186249A9C8d62512C,
+            0x1b6e16403b06a51C42Ba339E356a64fE67348e92,
             5
         );
         vm.stopBroadcast();
